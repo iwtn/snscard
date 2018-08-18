@@ -6,8 +6,17 @@
 </template>
 
 <script>
+const octokit = require('@octokit/rest')()
+
+octokit.repos.getForOrg({
+  org: 'octokit',
+  type: 'public'
+}).then(({data, headers, status}) => {
+  console.log(data)
+  console.log(headers)
+  console.log(status)
+})
 </script>
 
 <style>
 </style>
-
