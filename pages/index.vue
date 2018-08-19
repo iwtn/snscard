@@ -41,6 +41,8 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: #fff;
+  background-color: #24292e;
 }
 
 .title {
@@ -48,7 +50,6 @@ export default {
   display: block;
   font-weight: 900;
   font-size: 100px;
-  color: #35495e;
   letter-spacing: 1px;
 }
 
@@ -58,7 +59,7 @@ export default {
 
 .links {
   text-align: left;
-  font-size: 20px;
+  font-size: 30px;
   list-style-type: none;
 }
 </style>

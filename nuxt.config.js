@@ -28,6 +28,9 @@ module.exports = {
   ],
   workbox: {
     dev: true
+  },
+  router: {
+    base: '/snscard/'
   }
 }
 

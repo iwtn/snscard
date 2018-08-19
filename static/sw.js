@@ -1,4 +1,4 @@
-importScripts('/_nuxt/workbox.dev.c21f51f2.js')
+importScripts('/snscard/_nuxt/workbox.dev.c21f51f2.js')
 
 const workboxSW = new self.WorkboxSW({
   "cacheId": "snscard",
@@ -8,33 +8,33 @@ const workboxSW = new self.WorkboxSW({
 
 workboxSW.precache([
   {
-    "url": "/_nuxt/app.c81c3993cb2cd18695f2.js",
-    "revision": "60ffe8bf10230260492864a898cc33be"
+    "url": "/snscard/_nuxt/app.b843ace77a92b4f759cb.js",
+    "revision": "8fae7e9c43224abcd3e59ef1ae1dd743"
   },
   {
-    "url": "/_nuxt/layouts/default.3c200211a08bad610e83.js",
+    "url": "/snscard/_nuxt/layouts/default.3c200211a08bad610e83.js",
     "revision": "59b0a1cafbce7b40f320566fcf2283cd"
   },
   {
-    "url": "/_nuxt/manifest.98cf95a157f6b46c3752.js",
-    "revision": "d736ac12def4db626301c9d8ed67c452"
+    "url": "/snscard/_nuxt/manifest.df6793fe8e3fee8b4958.js",
+    "revision": "e63e72bbcdba0ebf1889cce2e580ebed"
   },
   {
-    "url": "/_nuxt/pages/account.19766187f07b4b311d01.js",
-    "revision": "cd0bdbbe69a643b22f6cd4dd57e507e0"
+    "url": "/snscard/_nuxt/pages/account.0bfb4e628e1d1636c4fa.js",
+    "revision": "a1deeace824b338e2f293090d6c50ac6"
   },
   {
-    "url": "/_nuxt/pages/index.b98805da47ef27a9d052.js",
-    "revision": "da00aa8ca866cea775e4ce1ed157a912"
+    "url": "/snscard/_nuxt/pages/index.5c111e6ef863616607d6.js",
+    "revision": "b4b4b2db43f113c28f0a4e99fbfde663"
   },
   {
-    "url": "/_nuxt/vendor.e038a3388b5853c3db6b.js",
+    "url": "/snscard/_nuxt/vendor.e038a3388b5853c3db6b.js",
     "revision": "76ab98d2bdd5f12d7f1fa73efa7da21c"
   }
 ])
 
 
-workboxSW.router.registerRoute(new RegExp('/_nuxt/.*'), workboxSW.strategies.cacheFirst({}), 'GET')
+workboxSW.router.registerRoute(new RegExp('/snscard/_nuxt/.*'), workboxSW.strategies.cacheFirst({}), 'GET')
 
-workboxSW.router.registerRoute(new RegExp('/.*'), workboxSW.strategies.networkFirst({}), 'GET')
+workboxSW.router.registerRoute(new RegExp('/snscard/.*'), workboxSW.strategies.networkFirst({}), 'GET')
 
