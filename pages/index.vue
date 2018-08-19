@@ -4,7 +4,7 @@
       <h1 class="title">
         {{ login }}
       </h1>
-      <img :src="avatar_url" />
+      <img class="image" :src="avatar_url" />
       <ul class="links">
         <li>{{bio}}</li>
         <li>{{blog}}</li>
@@ -46,10 +46,14 @@ export default {
 .title {
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
   display: block;
-  font-weight: 300;
-  font-size: 80px;
+  font-weight: 900;
+  font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
+}
+
+.image {
+  width: 100vw;
 }
 
 .links {
